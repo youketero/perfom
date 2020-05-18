@@ -3,7 +3,7 @@ import hudson.EnvVars
 import groovy.transform.Field
 import hudson.model.
 
-node(master) {
+node('master') {
     
    stage ('Git-hub checkout'){
      echo 'Compilation is done'
