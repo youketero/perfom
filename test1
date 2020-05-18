@@ -3,7 +3,7 @@ node{
         
     }
     stage("run"){
-        bat label: '', script: 'cd C:\\\\Users\\Andrii_Tarnovetskyi\\Desktop\\report\\perfomance \n jmeter -n -JEnv=test_environment -JModule=Task1 -t perf_suite.jmx -l data_task3_capacity.csv -e -o task3_capacity'
+        bat label: '', script: 'cd C:\\\\Users\\Andrii_Tarnovetskyi\\Desktop\\report\\perfomance \n jmeter -n -JEnv=test_environment -JModule=Task1 -t perf_suite.jmx -l data_task3_capacity.csv -e -o task3_capacity -f'
     }
     
 }
