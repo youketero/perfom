@@ -5,7 +5,7 @@ node{
      git credentialsId: '80f9ae9e-48f2-4182-907a-11b2d93436d1', url: 'https://github.com/youketero/perfom.git'
    }
    stage ('build'){
-   bat label '', script '''cd C:\\Program Files\jmeter\apache-jmeter-5.2.1 \n jmeter -n -JEnvironment=test_environment -JModule=Task1 -t '''+pwd()+'''perfomance/perf_suite.jmx''' 
+     bat label '', script '''cd C:\\\\Users\\Andrii_Tarnovetskyi\\Desktop\\report\\perfomance \n jmeter -n JEnvironment=test_environment -JModule=Task1 -t perf_suite.jmx'''
      echo 'Compilation is done'
    }
    stage ('deploy'){
