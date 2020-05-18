@@ -1,20 +1,9 @@
-
 node{
+    stage("kek"){
+        
+    }
+    stage("run"){
+        bat label: '', script: 'cd C:\\\\Users\\Andrii_Tarnovetskyi\\Desktop\\report\\perfomance \n jmeter -n -JEnv=test_environment -JModule=Task1 -t perf_suite.jmx -l data_task3_capacity.csv -e -o task3_capacity'
+    }
     
-   stage ('Git-hub checkout'){
-     git credentialsId: '80f9ae9e-48f2-4182-907a-11b2d93436d1', url: 'https://github.com/youketero/perfom.git'
-   }
-   stage ('build'){
-     bat label '', script '''cd "C:\\\\Users\\Andrii_Tarnovetskyi\\Desktop\\report\\perfomance" \n jmeter -n JEnvironment=test_environment -JModule=Task1 -t perf_suite.jmx'''
-     echo 'Compilation is done'
-   }
-   stage ('deploy'){
-     echo 'Compilation is done'
-   }
-   stage ('finish'){
-     echo 'Compilation is done'
-   } 
 }
-
-    
-
