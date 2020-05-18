@@ -1,0 +1,25 @@
+import hudson.slaves.EnvironmentVariablesNodeProperty
+import hudson.EnvVars
+import groovy.transform.Field
+import hudson.model.
+
+node(master) {
+    
+   stage ('Git-hub checkout'){
+     echo 'Compilation is done'
+   }
+   stage ('build'){
+     echo 'Compilation is done'
+   }
+   stage ('deploy'){
+     echo 'Compilation is done'
+   }
+   stage ('finish'){
+     echo 'Compilation is done'
+   }
+         
+    
+}
+
+    
+
