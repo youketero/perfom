@@ -1,7 +1,3 @@
-import hudson.slaves.EnvironmentVariablesNodeProperty
-import hudson.EnvVars
-import groovy.transform.Field
-import hudson.model.
 
 node{
     
@@ -16,9 +12,7 @@ node{
    }
    stage ('finish'){
      echo 'Compilation is done'
-   }
-         
-    
+   } 
 }
 
     
